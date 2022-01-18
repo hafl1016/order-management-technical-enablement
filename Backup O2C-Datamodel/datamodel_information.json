@@ -1,0 +1,282 @@
+{
+  "foreign_keys": [
+    {
+      "columns": [
+        [
+          "WERKS",
+          "WERKS"
+        ],
+        [
+          "MATNR",
+          "MATNR"
+        ],
+        [
+          "MANDT",
+          "MANDT"
+        ]
+      ],
+      "source_table": "O2C_VBAP",
+      "target_table": "O2C_MARC"
+    },
+    {
+      "columns": [
+        [
+          "KUNNR",
+          "KUNNR"
+        ],
+        [
+          "MANDT",
+          "MANDT"
+        ]
+      ],
+      "source_table": "O2C_KNA1",
+      "target_table": "O2C_VBAK"
+    },
+    {
+      "columns": [
+        [
+          "POSNR",
+          "POSNR"
+        ],
+        [
+          "VBELN",
+          "VBELN"
+        ],
+        [
+          "MANDT",
+          "MANDT"
+        ]
+      ],
+      "source_table": "O2C_VBAP",
+      "target_table": "O2C_VBUP"
+    },
+    {
+      "columns": [
+        [
+          "BUKRS",
+          "BUKRS_VF"
+        ],
+        [
+          "KUNNR",
+          "KUNNR"
+        ],
+        [
+          "MANDT",
+          "MANDT"
+        ]
+      ],
+      "source_table": "O2C_KNB1",
+      "target_table": "O2C_VBAK"
+    },
+    {
+      "columns": [
+        [
+          "POSNR",
+          "POSNR"
+        ],
+        [
+          "VBELN",
+          "VBELN"
+        ],
+        [
+          "MANDT",
+          "MANDT"
+        ]
+      ],
+      "source_table": "O2C_VBEP",
+      "target_table": "O2C_VBAP"
+    },
+    {
+      "columns": [
+        [
+          "ACTIVITY_EN",
+          "ACTIVITY_EN"
+        ]
+      ],
+      "source_table": "CEL_O2C_ACTIVITY_MASTER_DATA",
+      "target_table": "_CEL_O2C_ACTIVITIES"
+    },
+    {
+      "columns": [
+        [
+          "POSNR",
+          "POSNV"
+        ],
+        [
+          "VBELN",
+          "VBELV"
+        ],
+        [
+          "MANDT",
+          "MANDT"
+        ]
+      ],
+      "source_table": "O2C_VBAP",
+      "target_table": "O2C_VBFA"
+    },
+    {
+      "columns": [
+        [
+          "POSNR",
+          "POSNR"
+        ],
+        [
+          "VBELN",
+          "VBELN"
+        ],
+        [
+          "MANDT",
+          "MANDT"
+        ]
+      ],
+      "source_table": "O2C_VBAP",
+      "target_table": "_CEL_O2C_ACTIVITIES"
+    },
+    {
+      "columns": [
+        [
+          "VBELN",
+          "VBELN"
+        ],
+        [
+          "MANDT",
+          "MANDT"
+        ]
+      ],
+      "source_table": "O2C_VBAK",
+      "target_table": "O2C_VBAP"
+    },
+    {
+      "columns": [
+        [
+          "VBELN",
+          "VBELN"
+        ],
+        [
+          "MANDT",
+          "MANDT"
+        ]
+      ],
+      "source_table": "O2C_VBAK",
+      "target_table": "O2C_VBUK"
+    },
+    {
+      "columns": [
+        [
+          "POSNR",
+          "POSNR"
+        ],
+        [
+          "VBELN",
+          "VBELN"
+        ],
+        [
+          "MANDT",
+          "MANDT"
+        ]
+      ],
+      "source_table": "O2C_VBAP",
+      "target_table": "O2C_VBPA"
+    },
+    {
+      "columns": [
+        [
+          "OBJKY",
+          "VBELN"
+        ],
+        [
+          "MANDT",
+          "MANDT"
+        ]
+      ],
+      "source_table": "O2C_NAST",
+      "target_table": "O2C_VBAK"
+    },
+    {
+      "columns": [
+        [
+          "POSNN",
+          "POSNR"
+        ],
+        [
+          "VBELN",
+          "VBELN"
+        ],
+        [
+          "MANDT",
+          "MANDT"
+        ]
+      ],
+      "source_table": "O2C_VBFA",
+      "target_table": "O2C_LIPS"
+    }
+  ],
+  "process_configurations": [
+    {
+      "activity_column": "ACTIVITY_EN",
+      "activity_table": "_CEL_O2C_ACTIVITIES",
+      "case_column": "_CASE_KEY",
+      "case_table": "VBAP",
+      "sorting_column": "_SORTING",
+      "timestamp_column": "EVENTTIME"
+    }
+  ],
+  "tables": [
+    {
+      "alias": "MARC",
+      "source_name": "O2C_MARC"
+    },
+    {
+      "alias": "LIPS",
+      "source_name": "O2C_LIPS"
+    },
+    {
+      "alias": null,
+      "source_name": "_CEL_O2C_ACTIVITIES"
+    },
+    {
+      "alias": "KNA1",
+      "source_name": "O2C_KNA1"
+    },
+    {
+      "alias": "VBUK",
+      "source_name": "O2C_VBUK"
+    },
+    {
+      "alias": "VBPA",
+      "source_name": "O2C_VBPA"
+    },
+    {
+      "alias": "NAST",
+      "source_name": "O2C_NAST"
+    },
+    {
+      "alias": "VBUP",
+      "source_name": "O2C_VBUP"
+    },
+    {
+      "alias": null,
+      "source_name": "CEL_O2C_ACTIVITY_MASTER_DATA"
+    },
+    {
+      "alias": "VBAK",
+      "source_name": "O2C_VBAK"
+    },
+    {
+      "alias": "VBEP",
+      "source_name": "O2C_VBEP"
+    },
+    {
+      "alias": "VBFA",
+      "source_name": "O2C_VBFA"
+    },
+    {
+      "alias": "KNB1",
+      "source_name": "O2C_KNB1"
+    },
+    {
+      "alias": "VBAP",
+      "source_name": "O2C_VBAP"
+    }
+  ]
+}
